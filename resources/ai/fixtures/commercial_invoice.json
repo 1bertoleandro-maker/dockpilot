@@ -1,0 +1,53 @@
+{
+  "contract_version": "ai.extract.v1",
+  "document_type": "commercial_invoice",
+  "data": {
+    "invoice_number": "INV-1001",
+    "invoice_date": "2026-01-15",
+    "currency": "USD",
+    "total_amount": 1000,
+    "incoterm": "FOB",
+    "exporter": {
+      "name": "ACME Export Ltd.",
+      "address": "123 Harbor St",
+      "tax_id": "US-111",
+      "country": "US"
+    },
+    "importer": {
+      "name": "Brasil Importacoes SA",
+      "address": "Av Paulista 1000",
+      "tax_id": "BR-222",
+      "country": "BR"
+    },
+    "items": [
+      {
+        "line": 1,
+        "description": "Widget A",
+        "ncm": "8471.30.12",
+        "quantity": 10,
+        "unit": "PCS",
+        "unit_price": 50,
+        "total_price": 500
+      },
+      {
+        "line": 2,
+        "description": "Widget B",
+        "ncm": "8471.30.19",
+        "quantity": 10,
+        "unit": "PCS",
+        "unit_price": 50,
+        "total_price": 500
+      }
+    ]
+  },
+  "field_confidence": {
+    "invoice_number": 0.99,
+    "total_amount": 0.95
+  },
+  "warnings": [],
+  "meta": {
+    "model": "fake-commercial_invoice",
+    "prompt_version": "extract.v1",
+    "pages_read": 1
+  }
+}

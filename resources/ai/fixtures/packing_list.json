@@ -1,0 +1,42 @@
+{
+  "contract_version": "ai.extract.v1",
+  "document_type": "packing_list",
+  "data": {
+    "reference": "PL-1001",
+    "packing_date": "2026-01-16",
+    "total_packages": 20,
+    "gross_weight_kg": 1000,
+    "net_weight_kg": 900,
+    "volume_cbm": 12.5,
+    "exporter_name": "ACME Export Ltd.",
+    "importer_name": "Brasil Importacoes SA",
+    "items": [
+      {
+        "description": "Widget A",
+        "quantity": 10,
+        "unit": "PCS",
+        "net_weight_kg": 450,
+        "gross_weight_kg": 500,
+        "packages": 10
+      },
+      {
+        "description": "Widget B",
+        "quantity": 10,
+        "unit": "PCS",
+        "net_weight_kg": 450,
+        "gross_weight_kg": 500,
+        "packages": 10
+      }
+    ]
+  },
+  "field_confidence": {
+    "gross_weight_kg": 0.97,
+    "total_packages": 0.98
+  },
+  "warnings": [],
+  "meta": {
+    "model": "fake-packing_list",
+    "prompt_version": "extract.v1",
+    "pages_read": 1
+  }
+}

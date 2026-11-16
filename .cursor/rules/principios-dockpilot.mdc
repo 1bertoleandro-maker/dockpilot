@@ -1,0 +1,32 @@
+---
+description: Princípios mestres do DockPilot — obrigatórios em spec e código
+alwaysApply: true
+---
+
+# Princípios DockPilot
+
+Fonte: `dockpilot.md`. Obrigatórios. Desvio → atualizar o doc + aprovação explícita.
+
+## Código
+
+- Sem duplicação — extrair Service/shared/component
+- Laravel Way — Form Request, Policy, Job, Event, Migration, Resource
+- Sem jQuery
+- Services obrigatórios; Controller sem regra de negócio
+- Tipagem forte; Enum para domínio; DTO entre camadas
+
+## Qualidade e UX
+
+- Toda funcionalidade tem API
+- Todo módulo tem testes
+- Todo formulário tem validação (Form Request)
+- Toda tela responsiva; sempre Tailwind
+
+## Segurança, docs e IA
+
+- Toda funcionalidade tem permissão (Policy/Gate)
+- Todo upload tem backup do original
+- Todo documento tem versionamento (imutável)
+- Toda saída de IA tem Score de Confiança
+- Nunca atualizar dados automaticamente
+- Sempre exigir aprovação do operador
